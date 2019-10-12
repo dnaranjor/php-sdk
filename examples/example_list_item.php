@@ -27,15 +27,15 @@ if($_GET['code']) {
 
 	// We construct the item to POST
 	$item = array(
-		"title" => "Item De Teste - Por Favor, Não Ofertar! --kc:off",
+		"title" => "Item De Prueba - Por Favor, No Ofertar! --kc:off",
         "category_id" => "MLB257111",
         "price" => 10,
-        "currency_id" => "BRL",
+        "currency_id" => "CLP",
         "available_quantity" => 1,
         "buying_mode" => "buy_it_now",
-        "listing_type_id" => "bronze",
+        "listing_type_id" => "gold",
         "condition" => "new",
-        "description" => array ("plain_text" => "Item de Teste. Mercado Livre's PHP SDK."),
+        "description" => array ("plain_text" => "Item de Prueba. MercadoLibre PHP SDK."),
         "video_id" => "RXWn6kftTHY",
         "warranty" => "12 month",
         "pictures" => array(
@@ -61,7 +61,7 @@ if($_GET['code']) {
             ),
             array(
                 "id" => "SCREEN_SIZE",
-                "value_name" => "4.7 polegadas"
+                "value_name" => "4.7 pulgadas"
             ),
             array(
                 "id" => "TOUCH_SCREEN",
@@ -109,6 +109,6 @@ if($_GET['code']) {
 
 } else {
 
-	echo '<a href="' . $meli->getAuthUrl($redirectURI, Meli::$AUTH_URL['MLB']) . '">Login using MercadoLibre oAuth 2.0</a>';
+	echo '<a href="' . $meli->getAuthUrl($redirectURI, Meli::$AUTH_URL['MLC']) . '">Login using MercadoLibre oAuth 2.0</a>';
 }
 
